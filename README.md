@@ -25,7 +25,7 @@ email: 'test@gfi.com',
 password: 'T3stgf1'
 
 ## Structure
-
+```
 ├── angular.json
 ├── deployment.sh
 ├── e2e
@@ -110,3 +110,4 @@ password: 'T3stgf1'
 │           └── credentials.login.js
 ├── tsconfig.json
 └── tslint.json
+```
