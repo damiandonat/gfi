@@ -1,0 +1,62 @@
+<div class="container h-100 topTable">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-8 center">
+      <div class="flex">
+        <div style="flex: 1">
+          <h1  class="pull-left">
+            Films
+          </h1>
+        </div>
+        <div style="flex: 1">
+          <div class="pull-right">
+            <button class="btn btn-primary marginButtnActions" [routerLink]="['/films/favorites']" title="My avorites list">
+              <i class="fas fa-list-alt"></i>
+            </button>
+          </div> 
+        </div>
+      </div>
+      <table class="table table-stripedtable-bordered table-sm" cellspacing="0"
+      width="100%">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Title</th>
+            <th scope="col">Country</th>
+            <th scope="col">Director</th>
+            <th scope="col">Genre</th>
+            <th scope="col">Language</th>
+            <th scope="col">Released</th>
+            <th scope="col">Poster</th>
+            <th scope="col">Year</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of films; let i = index">
+            <th scope="row">{{ i }}</th>
+            <td scope="col">{{ item.fTitle }}</td>
+            <td scope="col">{{ item.Country }}</td>
+            <td scope="col">{{ item.Director }}</td>
+            <td scope="col">{{ item.Genre }}</td>
+            <td scope="col">{{ item.Language }}</td>
+            <td scope="col">{{ item.Released }}</td>
+            <td scope="col">
+              <img src="{{ item.Images[0] }}" style="width: 100%;" alt="poster">
+            </td>
+            <td scope="col">{{ item.Year }}</td>
+            <td scope="col">
+              <div class="flex">
+                <button class="btn btn-primary marginButtnActions" (click)="details(item)">
+                  <i class="fas fa-info"></i>
+                </button>
+                <button class="btn btn-primary marginButtnActions" (click)="favourite(item)">
+                  <i class="far fa-heart"></i>
+                </button>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>   
+  </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="container h-100 topForm">
+  <div class="row h-100 justify-content-center align-items-center">
+    <form class="col-4 center">
+      <div>
+        <!-- img -->
+        <img src="/assets/img/gfi.png" alt="" class="widthImg">
+      </div>
+      <div>
+        <!-- credentials -->
+        <div class="marginTopInput">
+          <!-- user -->
+          <input type="text" class="form-control" placeholder="Input email" [(ngModel)]="credentials.email" [ngModelOptions]="{standalone: true}">
+        </div>
+        <div class="marginTopInput">
+          <!-- pass -->
+          <input type="password" class="form-control" placeholder="Input password" [(ngModel)]="credentials.password" [ngModelOptions]="{standalone: true}">
+        </div>
+      </div>
+      <div class="marginTopButton">
+        <!-- button -->
+        <button class="btn btn-primary" (click)="login()">Log In</button>
+      </div>
+      <div>
+        <label for="" *ngIf="errorControl.error" class="error">
+          {{ errorControl.message }}
+        </label>
+      </div>
+    </form>   
+  </div>
+</div>

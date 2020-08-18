@@ -1,0 +1,82 @@
+<div class="container h-100 topForm">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-4">
+      <div class="center">
+        <h1>
+          Details Film
+        </h1>
+      </div>
+      <ul>
+        <li>
+          Actors: {{ film.params.Actors }}
+        </li>
+        <li>
+          Awards: {{ film.params.Awards }}
+        </li>
+        <li>
+          Country: {{ film.params.Country }}
+        </li>
+        <li>
+          Director: {{ film.params.Director }}
+        </li>
+        <li>
+          Genre: {{ film.params.Genre }}
+        </li>
+        <li>
+          Language: {{ film.params.Language }}
+        </li>
+        <li>
+          Metascore: {{ film.params.Metascore }}
+        </li>
+        <li>
+          Plot: {{ film.params.Plot }}
+        </li>
+        <li>
+          Rated: {{ film.params.Rated }}
+        </li>
+        <li>
+          Released: {{ film.params.Released }}
+        </li>
+        <li>
+          Response: {{ film.params.Response }}
+        </li>
+        <li>
+          Runtime: {{ film.params.Runtime }}
+        </li>
+        <li>
+          Title: {{ film.params.Title }}
+        </li>
+        <li>
+          Type: {{ film.params.Type }}
+        </li>
+        <li>
+          Writer: {{ film.params.Writer }}
+        </li>
+        <li>
+          Year: {{ film.params.Year }}
+        </li>
+        <li>
+          imdbID: {{ film.params.imdbID }}
+        </li>
+        <li>
+          imdbRating: {{ film.params.imdbRating }}
+        </li>
+        <li>
+          imdbVotes: {{ film.params.imdbVotes }}
+        </li>
+      </ul>
+      <div class="pull-left">
+        <button class="btn btn-primary marginButtnActions" [routerLink]="['/films']" title="Back to films">
+          <i class="fas fa-arrow-circle-left"></i>
+          Back to films
+        </button>
+      </div>
+      <div class="pull-right">
+        <button class="btn btn-primary marginButtnActions" [routerLink]="['/films/favorites']" title="Back to favourite">
+          <i class="fas fa-arrow-circle-left"></i>
+          Back to favourites
+        </button>
+      </div> 
+    </div>   
+  </div>
+</div>

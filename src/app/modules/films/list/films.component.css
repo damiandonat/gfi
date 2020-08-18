@@ -1,0 +1,12 @@
+.topTable {
+    margin-top: 5%;
+}
+ 
+.flex {
+    display: flex;
+}
+
+.marginButtnActions {
+    margin-left: 10px;
+    margin-right: 10px;
+}
